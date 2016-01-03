@@ -113,3 +113,7 @@ MEDIA_URL = '/saved_csv_files/'
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
+
